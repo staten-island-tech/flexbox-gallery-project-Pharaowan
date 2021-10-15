@@ -1,0 +1,44 @@
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
+}
+body {
+  background-color: aquamarine;
+  align-items: center;
+}
+h1{
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: rgb(red, green, blue);
+}
+.header {
+  text-align: center;
+  font-size: 90px;
+}
+.card-parent{
+  justify-content: space-between;
+  display: flex;
+  width: 90vw;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.card {
+  font-size: 7rem;
+  width: 45rem;
+  margin: 3rem auto;
+  background-color: lightblue;
+  height: 45rem;
+  align-content: flex-end;
+  box-shadow:black 1rem 1rem 1rem;
+}
+img{
+  object-fit: cover;
+  width: 45rem;
+  height: 34rem;
+  
+}
