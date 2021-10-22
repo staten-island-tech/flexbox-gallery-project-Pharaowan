@@ -5,40 +5,118 @@ body,
   margin: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 body {
-  background-color: aquamarine;
+  background-color: #fed426;
   align-items: center;
 }
-h1{
+h1 {
   font-size: 5rem;
+  color: crimson;
   text-align: center;
   text-shadow: rgb(red, green, blue);
 }
 .header {
-  text-align: center;
-  font-size: 90px;
+  transition: ease-in-out 4.5s;
 }
-.card-parent{
+.header:hover {
+  transform: rotate(-9000deg);
+  color: blueviolet;
+}
+.food {
+  transition: ease-in-out 3s;
+}
+.food:hover {
+  transform: rotate(-6000deg);
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-2rem);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-2rem);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.header {
+  text-align: center;
+  font-size: 9rem;
+}
+.card-parent {
   justify-content: space-between;
   display: flex;
   width: 90vw;
   flex-wrap: wrap;
   margin: auto;
+  filter: grayscale(100%);
+}
+.card-parent {
+  filter: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .card {
   font-size: 7rem;
   width: 45rem;
   margin: 3rem auto;
-  background-color: lightblue;
+  background-color: black;
   height: 45rem;
   align-content: flex-end;
-  box-shadow:black 1rem 1rem 1rem;
+  box-shadow: black 1rem 1rem 1rem;
+  transition: 800ms all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.4rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 1.8s ease;
 }
-img{
+.card:hover {
+  transform: scale(1.08);
+}
+img {
   object-fit: cover;
   width: 45rem;
   height: 34rem;
+  filter: grayscale(100%);
+}
+img:hover {
+  filter: none;
+}
+@media  (max-width: 768px) {
+  html,
+  body,
+  * {
+    color: violet;
+  }
   
+}
+@media  (max-width: 375px) {
+  html,
+  body,
+  *{
+    font-size: 50%;
+  }
+  .card{
+    width: 80%;
+  }
 }
